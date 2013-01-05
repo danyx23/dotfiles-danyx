@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ssh -o "GSSAPIAuthentication no" root@${@}
-

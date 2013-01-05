@@ -2,32 +2,21 @@ host localhost
      StrictHostKeyChecking no
      UserKnownHostsFile /dev/null
 
-host alioth.debian.org svn.debian.org git.debian.org bzr.debian.org hg.debian.org darcs.debian.org arch.debian.org
-     user lefant-guest
-
-host *.hq.kred *.internal.machines
-     user fabian
-
 host *.local
      AddressFamily inet
      CheckHostIP no
 
 host *.42.lefant.net
      #AddressFamily inet6
-     user lefant
+     user danyx
 
-host *.lefant.net muybridge.*
-     user lefant
-
-host hip* hop* hep* al* wave* skib* mixer* tune* geri* gifur*
-     user root
-
+host *.danyx.com *.danielbachler.com
+     user danyx
 
 host *
      HashKnownHosts no
      NoHostAuthenticationForLocalhost yes
      ControlMaster auto
      ControlPath ~/.ssh/sock/%r@%h:%p
-     VisualHostKey yes
-     #ProxyCommand monkeysphere ssh-proxycommand %h %p
+     VisualHostKey yes     
      ServerAliveInterval 900

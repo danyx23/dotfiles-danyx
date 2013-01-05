@@ -1,10 +1,10 @@
-HOME=/home/lefant
-SOURCE=$HOME/git/dotfiles-lefant
+HOME=/home/danyx
+SOURCE=$HOME/git/dotfiles-danyx
 
-BUNDLE_LIB="$HOME/git/dotfiles-lefant/"
+BUNDLE_LIB="$HOME/git/dotfiles-danyx/"
 
-owner=lefant
-group=lefant
+owner=danyx
+group=danyx
 
 mode=644
 

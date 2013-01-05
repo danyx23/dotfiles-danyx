@@ -1,5 +1,0 @@
-METHODS="m_inmail"
-MAIL_DOMAIN_NAME=lefant.net
-SORT_OUTPUT=no
-KEEP_DUPES=yes
-

@@ -1,7 +1,7 @@
 . $HOME/.common.sh
 
 # proper keyboard settings
-setxkbmap dvorak -option compose:ralt -option compose:rwin -option ctrl:nocaps
+setxkbmap quertz
 
 # no sound, no blanking
 xset s off

@@ -22,4 +22,4 @@
 #         cmd = ediff3merge.sh $LOCAL $REMOTE $MERGED $BASE
 #         trustExitCode = false
 [github]
-        user = lefant
+        user = danyx

@@ -1,17 +1,15 @@
 . ~/.common.sh
 
-export EMAIL="e@lefant.net"
+export EMAIL="daniel@danielbachler.de"
 #export DEBEMAIL="Fabian Linzberger <e@lefant.net>"
 #export DARCS_EMAIL="Fabian Linzberger <e@lefant.net>"
 #export REPORTBUGEMAIL="Fabian Linzberger <e@lefant.net>"
-export GIT_AUTHOR_NAME="Fabian Linzberger"
-export GIT_COMMITTER_NAME="Fabian Linzberger"
+export GIT_AUTHOR_NAME="Daniel Bachler"
+export GIT_COMMITTER_NAME="Daniel Bachler"
+export HG_AUTHOR_NAME="Daniel Bachler"
+export HG_COMMITTER_NAME="Daniel Bachler"
 #export GIT_AUTHOR_EMAIL="e@lefant.net"
 #export GIT_COMMITTER_EMAIL="e@lefant.net"
-export GPGKEY=C02860F0
-
-alias cpan_modulebuild_style_install="perl Build.PL; ./Build; ./Build test && sudo ./Build install"
-
 
 [[ ! -e ~/.zsh/zshlocal.sh ]] && cp -v ~/.templates/zshlocal.sh ~/.zsh/zshlocal.sh
 [[ -e ~/.emacs.d ]] && [[ ! -e ~/.emacs.d/local.el ]] && cp -v ~/.templates/local.el ~/.emacs.d/local.el
