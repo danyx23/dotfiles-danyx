@@ -17,6 +17,6 @@ host *
      HashKnownHosts no
      NoHostAuthenticationForLocalhost yes
      ControlMaster auto
-     ControlPath ~/.ssh/sock/%r@%h:%p
+     #ControlPath ~/.ssh/sock/%r@%h:%p
      VisualHostKey yes     
      ServerAliveInterval 900

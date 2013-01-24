@@ -56,19 +56,13 @@ case $TMUX in
         }
         ;;
     *)
-        maybe_run_keychain
+#        maybe_run_keychain
         fix_env
 
-        if [ -z $SSH_TTY ]; then
-            case `hostname` in
-                hecht)
-                    ~/.bin/xplanet.sh &
-                    setxkbmap dvorak -option compose:ralt -option compose:rwin -option ctrl:nocaps &
-                    ;;
-                *)
-                    setxkbmap dvorak -option compose:ralt -option compose:rwin -option ctrl:nocaps &
-                    ;;
-            esac
+        if [[ ( -z $SSH_TTY || -n $DANYX_TMUXMASTER ) ]]; then
+#            case `hostname` in
+#               *)
+#            esac
 
             unsetopt notify
             #unison -silent -terse &>/dev/null
@@ -103,9 +97,9 @@ case $TMUX in
 	    # cd ~/shared/arbeitszeit/`hostname`
 	    # echo "work" |~/shared/code/python/timelog/timelog.py
 
-            mount |grep -q ~/.encfs && fusermount -u -z ~/.encfs
+#            mount |grep -q ~/.encfs && fusermount -u -z ~/.encfs
 
-            which kdestroy >/dev/null && kdestroy -q &>/dev/null
+#            which kdestroy >/dev/null && kdestroy -q &>/dev/null
 
             #unison -silent -terse &
             #disown
