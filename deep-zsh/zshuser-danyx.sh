@@ -11,6 +11,9 @@ export HG_COMMITTER_NAME="Daniel Bachler"
 #export GIT_AUTHOR_EMAIL="e@lefant.net"
 #export GIT_COMMITTER_EMAIL="e@lefant.net"
 
+# nicer line drawing characters when connecting with putty
+export NCURSES_NO_UTF8_ACS=1
+
 [[ ! -e ~/.zsh/zshlocal.sh ]] && cp -v ~/.templates/zshlocal.sh ~/.zsh/zshlocal.sh
 [[ -e ~/.emacs.d ]] && [[ ! -e ~/.emacs.d/local.el ]] && cp -v ~/.templates/local.el ~/.emacs.d/local.el
 

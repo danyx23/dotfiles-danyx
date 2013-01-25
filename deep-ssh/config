@@ -13,6 +13,16 @@ host *.42.lefant.net
 host *.danyx.com *.danielbachler.com
      user danyx
 
+host office
+     user danyx
+     HostName 10.5.42.200
+     ForwardAgent yes
+
+host office2
+     user danyx
+     HostName 10.5.42.201
+     ForwardAgent yes
+
 host *
      HashKnownHosts no
      NoHostAuthenticationForLocalhost yes
