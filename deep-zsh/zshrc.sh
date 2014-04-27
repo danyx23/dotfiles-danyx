@@ -57,6 +57,8 @@ export LESS='-iFRSX'
 export GREP_OPTIONS="--color=auto --ignore-case --exclude-dir=.svn --exclude-dir=.git"
 
 alias ls='ls --color=auto --classify'
+alias lsa='ls --color=auto --classify -lah'
+alias du1='du --max-depth=1 -h'
 
 alias greperl="grep --color=auto --ignore-case --exclude='.*' --include='*rl' --include='*inc' --exclude='.*' -r"
 
